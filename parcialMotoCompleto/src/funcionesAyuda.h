@@ -1,0 +1,73 @@
+/*
+ * Genericas.h
+ *
+ *  Created on: 20 may. 2022
+ *      Author: bianky
+ */
+
+#ifndef GENERICAS_H_
+#define GENERICAS_H_
+
+#define ERROR -1
+#define TODOK 1
+
+//funciones Bianca gimenez
+int getInt(int *pResultado,
+           char *pMensaje,
+           char *pMensajeError,
+           int minimo,
+           int maximo,
+           int reintentos);
+
+float getFloat(float *pResultado,
+               char *pMensaje,
+               char *pMensajeError,
+               float minimo,
+               float maximo,
+               int reintentos);
+
+char getChar(char *pResultado,
+             char *pMensaje,
+             char *pMensajeError,
+             char minimo,
+             char maximo,
+             int reintentos);
+
+int getString(char *pResultado,
+              char *pMensaje,
+              char *pMensajeError,
+              int minimo,
+              int maximo,
+              int reintentos);
+
+int getNombreOApellido(char *pResultado,
+                       char *pMensaje,
+                       char *pMensajeError,
+                       int minimo,
+                       int maximo,
+                       int reintentos);
+
+int getStringTelefono(char *pResultado,
+                      char *pMensaje,
+                      char *pMensajeError,
+                      int minimo,
+                      int maximo,
+                      int reintentos);
+
+char getSexo(char *pResultado,char *pMensaje,char *pMensajeError,int reintentos);
+
+int esNumerico(char str[]);
+int esTelefono(char str[]);
+int esAlfanumerico(char str[]);
+int esSoloLetras(char str[]);
+
+int isValidNombre(char* cadena,int longitud);
+void convertirMayuscula(char* cadena);
+void convertirMinuscula(char* cadena);
+char validarSioNo(char *pResultado,char *pMensaje,char *pMensajeError, int reintentos);
+int valFecha(int dd,int mm, int yy);
+int ordenacion_seleccion(int *list, int N);
+int intercambiar(int *list, int i, int j);
+int ordenarArrayInt(int list[],int len);
+
+#endif /* GENERICAS_H_ */

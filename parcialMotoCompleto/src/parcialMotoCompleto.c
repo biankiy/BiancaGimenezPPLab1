@@ -1,3 +1,14 @@
+/*
+ ============================================================================
+ Name        : Parcial Laboratorio.c
+ Author      : Bianca Gimenez
+ Version     : 1G
+ Copyright   : Your copyright notice
+ Description : TEMA MOTO
+ ============================================================================
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
